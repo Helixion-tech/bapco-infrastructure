@@ -1,9 +1,8 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar'
-import Hero from '../Services/Hero'
-import Footer from '../Footer/Footer'
-import BgImage from '../../assets/website/services_bg.png'
-import Items from '../Services/items'
+import BgImage from '../../assets/website/contact.png'
+import Navbar from '../Navbar/Navbar';
+import Hero from '../Contact/Hero';
+import Footer from '../Footer/Footer';
 
 
 const bgStyle = {
@@ -15,17 +14,16 @@ const bgStyle = {
   };
 
 
-const Services = () => {
+const Contact = () => {
   return (
     <>
     <div style={bgStyle}>
         <Navbar />
         <Hero />
     </div>
-        <Items />
         <Footer />
     </>
   )
 }
 
-export default Services
+export default Contact

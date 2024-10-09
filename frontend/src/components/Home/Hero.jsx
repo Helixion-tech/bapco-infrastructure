@@ -2,6 +2,7 @@ import React from 'react'
 import { IoMdListBox } from "react-icons/io";
 import { motion } from 'framer-motion';
 import { SlideRight } from '../../utility/animation';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -23,7 +24,7 @@ const Hero = () => {
                         variants={SlideRight(1.5)}
                         initial="hidden"
                         animate="visible"className='flex justify-center items-center gap-8 md:justify-start'>
-                            <button className='primary-btn flex items-center gap-2'>About us</button>
+                            <Link to="/about"><button className='primary-btn flex items-center gap-2'>About us</button></Link>
                             <button className='flex justify-center items-center gap-2 hover:!scale-110 duration-300 font-semibold text-white'><IoMdListBox />Brochure</button>
                         </motion.div>
                     </div>

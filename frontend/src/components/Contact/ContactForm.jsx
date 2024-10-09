@@ -27,7 +27,6 @@ const ContactForm = () => {
     
         if (data.success) {
           setResult("Form Submitted Successfully");
-          console.log("message sent success");
           event.target.reset();
           Swal.fire({
             title: "Success!",

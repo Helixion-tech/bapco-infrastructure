@@ -3,6 +3,7 @@ import Hero from '../About/Hero';
 import BgImage from '../../assets/website/about_bg.png'
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+import Aboutus from '../About/Aboutus';
 
 const bgStyle = {
   backgroundImage: `url(${BgImage})`,
@@ -15,11 +16,12 @@ const bgStyle = {
 const About = () => {
   return (
     <>
-    <div style={bgStyle}>
-        <Navbar />
-        <Hero />
-        <Footer />
-    </div>
+      <div style={bgStyle}>
+          <Navbar />
+          <Hero />
+      </div>
+          <Aboutus />
+          <Footer />
     </>
   )
 }
